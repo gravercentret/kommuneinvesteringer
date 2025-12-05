@@ -4,3 +4,4 @@ polars
 xlsxwriter
 plotly
 babel
+streamlit-cookie-controller

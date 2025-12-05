@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.10-slim
+FROM python:3.10-slim-bookworm
 
 # Ensure image associated witht the correct repo when pushed to the GitHub Container Registry
 LABEL org.opencontainers.image.source=https://github.com/gravercentret/kommunale_investeringer_app

@@ -25,6 +25,7 @@ from utils.data_processing import (
 )
 from utils.plots import create_pie_chart
 from config import set_pandas_options, set_streamlit_options
+from utils.newsletter_popup import newsletter_popup
 
 # Apply the settings
 set_pandas_options()
@@ -37,8 +38,12 @@ create_user_session_log("Forside")
 
 df_pl = get_data()
 
-st.logo("webapp/images/GC_png_oneline_lockup_Outline_Blaa_RGB.png", link="https://gravercentret.dk/")
+st.logo(
+    "webapp/images/GC_png_oneline_lockup_Outline_Blaa_RGB.png", link="https://gravercentret.dk/"
+)
 
+
+newsletter_popup
 # Title of the app
 st.title("Kommunernes og regionernes investeringer")
 
